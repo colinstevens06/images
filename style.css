@@ -1,0 +1,182 @@
+html, body {
+  background-color: #eaeaea;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* ============================ CHOCOLATE PIECES */
+.top-chocolate {
+  z-index: 91; /* 91 so it's just higher than the bottom piece */
+  position: absolute;
+  left: -165px;
+  top: 10px;
+  height: 150px;
+  width: 400px;
+
+}
+
+.bottom-chocolate {
+  z-index: 90; /* setting this at 90 so it's higher than my box w all the text */
+  position: absolute;
+  left: -175px;
+  top: 10px;
+  height: 150px;
+  width: 400px;
+}
+
+.hershey-kisses {
+  z-index: 91;
+  position: absolute;
+  width: 25%;
+  top: 500px;
+  left: 500px;
+}
+
+.kiss-shadow-left {
+  width: 25%;
+  position: absolute;
+  z-index: 90;
+  top: 655px;
+  left: 460px;
+}
+
+.kiss-shadow-right {
+  width: 25%;
+  position: absolute;
+  z-index: 90;
+  top: 645px;
+  left: 535px;
+}
+
+/* ============================ ICONS */
+.icon {
+  width: 25px;
+}
+
+/* ============================ TEXT */
+h2 {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.h2-smaller {
+  font-size: 8px;
+
+}
+
+.large-body {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.story-subhead {
+  font-size: 18px;
+  margin-block-start: .5em;
+  margin-block-end: .25em;
+  display: inline-block;
+  width: 250px;
+}
+
+
+.hover-text {
+  display: none;
+}
+
+
+/* ============================ COCOA WORKER SECTION */
+.cocoa-workers-img {
+  max-width: 100%;
+}
+
+.image-overlay-content {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  color: #ffffff;
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+  z-index: 10;
+
+}
+
+.gray-hover-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  opacity: .5;
+}
+
+
+
+/* ============================ BOXES */
+.boxes-container {
+  margin-top: 25px;
+  margin-left: 175px;
+  background-color: #ffffff;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  display: inline-block;
+
+}
+
+.box {
+  max-width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+
+  /* display: inline-flex; */
+}
+
+.box-1 {
+  padding: 50px;
+  /* background-color: aqua; */
+  float: left;
+  /* display: inline-flex; */
+}
+
+
+.box-2 {
+  /* background-color: lightgreen; */
+  float: right;
+  position: relative;
+  transition: .5s;
+}
+
+.box-3 {
+  background-color: lightyellow;
+  float: left;
+  box-sizing: border-box;
+
+}
+
+.box-4 {
+  padding: 50px;
+  /* background-color: lightskyblue; */
+  float: right;
+}
+
+/* ============================ HOVER BOX */
+.hover-box:hover {
+  cursor: pointer;
+}
+
+.hover-box:hover .hover-text {
+  display: inline-block;
+  font-size: 8px;
+}
+
+.hover-box:hover .gray-hover-overlay {
+  display: inline-block;
+}
+
+
